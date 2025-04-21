@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather</title>
+    <link rel="shortcut icon" href="img/icon.avif" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="media.css" />
+  </head>
+  <body>
+    <div class="card">
+      <span id="date-time"></span>
+      <div class="search">
+        <input
+          type="text"
+          placeholder="Enter Your Location"
+          spellcheck="false"
+          class="inputbox"
+          style="text-transform: capitalize"
+          list="suggestions"
+        />
+        <!-- <datalist id="suggestions">
+          <option value="Black"></option>
+          <option value="Red"></option>
+          <option value="Green"></option>
+          <option value="Blue"></option>
+          <option value="White"></option>
+        </datalist> -->
+
+        <button><img src="img/search.png" class="inputbtn" /></button>
+      </div>
+
+      <div class="error">
+        <h2>Please Enter Valid Location</h2>
+        <img src="img/2701982.jpg" alt="" />
+      </div>
+
+      <div class="weather">
+        <img src="img/clouds.png" class="weather-icon" />
+        <h2 class="desc">description</h2>
+        <h1 class="temp">22°C</h1>
+        <h2 class="city">Germany</h2>
+
+        <div class="detail">
+          <div class="col">
+            <img src="img/humidity.png" alt="" />
+            <div>
+              <p class="humidity">50%</p>
+              <p>Humidity</p>
+            </div>
+          </div>
+
+          <div class="col">
+            <img src="img/wind.png" alt="" />
+            <div>
+              <p class="wind">15 Km/h</p>
+              <p>Wind Speed</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="btn">
+          <a target="_blank" href="https://openweathermap.org/"
+            ><button>For More Info.</button></a
+          >
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
